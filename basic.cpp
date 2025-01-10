@@ -1,23 +1,44 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-    // outer loop
-    int n =4;
-    for(int i=1; i<=n;i++)
+int main()
+{
+    int a,b;
+    char op;
+
+    cout<<"enter a :";
+    cin >> a;
+
+    cout<<"enter b :";
+    cin >> b;
+
+    cout<<"enter operater :";
+    cin >> op;
+
+    //calculater
+
+    if(op == '+')
     {
-       for(int j =1; j<=n-i;j++)
-       {
-        cout<<" ";
-       
-       }
-       
-        for(int k=1; k<=i;k++)
-       {
-        cout << "*";
-       }
-       
-       cout <<endl;
+        cout << " a+b = " << (a+b) <<endl; 
+    }else if(op == '-')
+    {
+        cout << " a-b =" << (a-b) <<endl;
+    }
+    else if (op == '*')
+    {
+        cout << " a*b =" << (a*b) <<endl;
+    }
+    else if(op == '/')
+    {
+        cout << " a/b =" << (a/b) <<endl;
+    }
+    else if(op == '%')
+    {
+        cout << " a%b =" << (a%b) <<endl;
+    }
+    else {
+        cout << " invalid operater"<<endl;
     }
     return 0;
-}
+
+} 
